@@ -214,6 +214,12 @@ header h1 {
     display: none;
 }
 
+@media (max-width: 1280px){
+    .question_wrap button{
+        padding: 10px !important;
+    }
+}
+
 @media (width <= 1280px) {
     header h1 {
         font-size: 30px !important;
@@ -248,8 +254,8 @@ header h1 {
 
     .logo_wrap img{
         padding-top: 40px;
-        height: 600px;
-        width: 75px;
+        height: 600px !important;
+        width: 75px !important;
     }
     
     .score_wrap {
@@ -281,8 +287,7 @@ header h1 {
         width: 35px;
     }
 }
-
-@media (width <= 1000px) {
+@media (max-width: 1180px) {
     .question_wrap button {
         font-size: 25px;
         width: 120px;
