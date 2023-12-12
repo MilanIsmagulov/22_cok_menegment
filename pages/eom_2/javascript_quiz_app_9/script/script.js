@@ -118,7 +118,7 @@ function createList2() {
 
     addEventListeners2();
     console.log(localStorage)
-
+    window.location.reload()
 }
 
 function loadList2() {

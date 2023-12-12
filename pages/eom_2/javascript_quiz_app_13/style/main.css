@@ -80,6 +80,9 @@ p{
     height: clamp(300px,70vh,1000px) !important;
 }
 
+.col{
+	margin: 5px !important;
+}
 
 .main_window{
 		height: 75vh;

@@ -16,7 +16,9 @@ body{
 
 }
 
-
+.col{
+	margin: 5px !important;
+}
 
 
 .main_window{
