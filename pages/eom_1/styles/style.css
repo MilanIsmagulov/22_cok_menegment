@@ -46,6 +46,7 @@ body{
 }
 
 .topic_link {
+    margin: 5px !important;
     width: 25vh;
     height: 25vh;
     background-color: #FF7276;
