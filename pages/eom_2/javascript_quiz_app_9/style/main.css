@@ -16,6 +16,9 @@ body{
 
 }
 
+
+
+
 .main_window{
 		height: 75vh;
 }
@@ -188,9 +191,23 @@ body{
 	}
 }
 
+
+
+@media (max-width: 1300px){
+	.spancol{
+		margin-left: 15px !important;
+		margin-right: 15px !important;
+		width: 25%;
+	}
+}
+
 @media (max-width: 1180px){
 	.black_header{
 		height: 180px;
 	}
-	
+	.spancol{
+		width: 30% !important;
+		margin-left: 15px !important;
+		margin-right: 15px !important;
+	}
 }

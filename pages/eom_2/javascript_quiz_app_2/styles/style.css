@@ -20,6 +20,66 @@ body{
     overflow-x: hidden;
 }
 
+p{
+    padding: 25px !important;
+    margin: 0 !important;
+    font-size: clamp(20px,2vw,30px) !important;
+}
+
+.theory_eom{
+    height: initial !important;
+    overflow: hidden;
+    padding-left: 28px !important;
+}
+
+.theory_eom img{
+    height: auto !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+    padding: 0px 35px !important;
+
+    border-radius: 25px !important;
+    object-fit: contain !important;
+    width: 50% !important;
+}
+
+.black_header{
+    height: initial !important;
+}
+
+.black_header a{
+    text-wrap: nowrap !important;
+}
+
+.img_g{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100% !important;
+}
+
+
+.img_g img{
+    margin: 0 auto !important; 
+}
+
+.popup_text{
+    height: 85% !important;
+    overflow-y: auto;
+    scroll-snap-align: start;
+    padding: 15px;
+    align-items: flex-start !important;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.popup_content {
+    min-width: 400px !important;
+    max-width: 1700px !important;
+    height: clamp(300px,70vh,1000px) !important;
+}
+
+
 .main_window{
     height: 100%;
     width: 100%;

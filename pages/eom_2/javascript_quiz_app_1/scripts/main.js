@@ -3,7 +3,7 @@ let testAnswers = document.querySelector('#answers_buttons1');
 
 let Dalee = document.querySelector('#check_button_3')
 
-
+localStorage.clear()
 
 
 
@@ -11,7 +11,7 @@ console.log('Script is Loaded')
 
 let questions = [
     {
-        text: 'Ознакомьтесь с правилами безопасной работы',
+        text: 'Ознакомьтесь с правилами безопасной работы.',
         right: 0,
         answers: ['для управления потоками рабочих сред путём изменения проходного сечения внутренней части трубопровода', 'для изменения основных параметров транспортируемых жидкостей и газов', 'для измерения основных параметров транспортируемых жидкостей и газов',],
     },

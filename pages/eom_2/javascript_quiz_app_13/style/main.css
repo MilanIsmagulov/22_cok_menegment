@@ -16,6 +16,71 @@ body{
 
 }
 
+
+p{
+    font-size: clamp(20px,2vw,30px) !important;
+}
+
+.theory_eom{
+    height: initial !important;
+    font-size: clamp(20px,2vw,30px) !important;
+    overflow: hidden;
+    padding-left: 28px !important;
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+}
+
+.theory_eom img{
+    height: auto !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+    padding: 0px 35px !important;
+
+    border-radius: 25px !important;
+    object-fit: contain !important;
+    width: 50% !important;
+}
+
+.black_header{
+    height: initial !important;
+}
+
+.black_header a{
+    text-wrap: nowrap !important;
+}
+
+.img_g{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100% !important;
+}
+
+
+.theory_eom img{
+    width: 80% !important;
+    margin: 0 auto !important; 
+}
+
+
+.popup_text{
+    height: 85% !important;
+    overflow-y: auto;
+    scroll-snap-align: start;
+    padding: 15px;
+    align-items: flex-start !important;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.popup_content {
+    width: initial !important;
+    min-width: 400px !important;
+    max-width: 1700px !important;
+    height: clamp(300px,70vh,1000px) !important;
+}
+
+
 .main_window{
 		height: 75vh;
 }
@@ -46,7 +111,7 @@ body{
 	align-items: center;
 	justify-content: center;
 	text-align: center;
-	font-size: 25px;
+	font-size: 22px;
 	font-weight: 900;
 	color: rgb(68, 82, 106);
 	background-color: rgb(214, 220, 229);
@@ -55,8 +120,8 @@ body{
 	padding-right: 25px;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	width: 17%;
-	
+	width: 25%;
+	min-height: 58px;
 }
 
 .secondcol{
@@ -188,9 +253,23 @@ body{
 	}
 }
 
+@media (max-width: 1300px){
+	.spancol{
+		margin-left: 15px !important;
+		margin-right: 15px !important;
+		width: 25% !important;
+		font-size: 20px !important;
+	}
+}
+
 @media (max-width: 1180px){
 	.black_header{
 		height: 180px;
 	}
-	
+	.spancol{
+		font-size: 16px !important;
+		width: 30% !important;
+		margin-left: 15px !important;
+		margin-right: 15px !important;
+	}
 }

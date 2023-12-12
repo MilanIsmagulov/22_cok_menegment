@@ -38,8 +38,7 @@ let mainQuestions = [
 
 let numberOfQuestion = 5; 
 let numberOfQuestionSum = 13;
-
-
+let numberOfEOM = 2;
 
 
 // Цикл создающий модальные окна, также пушит вопросы и ответы
@@ -284,23 +283,38 @@ for (i = 0; i < mainQuestions.length; i++){
     nextBtn.id = 'check_button_3'
     nextBtn.innerText = 'Далее'
     nextBtn.classList.add('disabled_button')
-    nextBtn.setAttribute('onclick', `location.href='../javascript_quiz_app_${numberOfQuestion+1}/index.html'`)
+    
+    if (numberOfQuestion !== numberOfQuestionSum){
+        nextBtn.setAttribute('onclick', `location.href='../javascript_quiz_app_${numberOfQuestion+1}/index.html'`)
+    } else {
+        nextBtn.setAttribute('onclick', `location.href='../javascript_result_page/index.html'`)
+    }
+
 
     divBtn.appendChild(nextBtn)
+    let checkButton = document.querySelector('#check_button_0')
+    checkButton.disabled = true
 
-
-
-
+    let formDivInput = document.querySelectorAll('input')
+    formDivInput.forEach(input => {
+        input.addEventListener('click', function(){
+            if (input.checked === true){
+                checkButton.disabled = false
+            }
+        })
+        input.addEventListener('click', function(){
+            if (input.checked === false){
+                checkButton.disabled = true
+            }
+        })
+    })
+    
     //Добавление ивента для проверки ответов
 
     checkAnswerBtn.addEventListener('click',function(event)
     {
         let inputsBlock = document.querySelectorAll('.answer_div')
         inputsBlock.forEach(inputs =>{
-            localStorage.setItem('answer_' + numberOfQuestion, JSON.stringify({questionPlace: false}));
-            nextBtn.classList.remove('disabled_button')
-            nextBtn2.classList.remove('disabled_button')
-            checkAnswerBtn.classList.add('disabled_button')
             inputs.children[0].disabled = true
         })
         let rightcheck = false
@@ -362,7 +376,9 @@ for (i = 0; i < mainQuestions.length; i++){
                     
                     elem.classList.add('correct')
                     nextBtn.classList.remove('disabled_button')
-                    nextBtn2.classList.remove('disabled_button')
+                    if (numberOfEOM != 3){
+                        nextBtn2.classList.remove('disabled_button')
+                    }
                     checkAnswerBtn.classList.add('disabled_button')
                 }
                 else
@@ -371,7 +387,9 @@ for (i = 0; i < mainQuestions.length; i++){
                     elem.classList.add('incorrect')
                     rightcheck=false
                     nextBtn.classList.remove('disabled_button')
-                    nextBtn2.classList.remove('disabled_button')
+                    if (numberOfEOM != 3){
+                        nextBtn2.classList.remove('disabled_button')
+                    }
                     checkAnswerBtn.classList.add('disabled_button')
 
                 }
@@ -381,7 +399,11 @@ for (i = 0; i < mainQuestions.length; i++){
                 //Выделение правильных ответов, если они не выбраны
                 if (mainQuestions[question_number].right.indexOf(counter) != -1){
                     localStorage.setItem('answer_' + numberOfQuestion, JSON.stringify({questionPlace: false}));
-                    elem.classList.add('correct')
+                    if (numberOfEOM != 3) {
+                        elem.classList.add('correct')
+                    } else {
+                        elem.classList.add('correct2')
+                    }
                 }
             }
             counter++
@@ -440,9 +462,30 @@ function showQuestion(i){
     popUpArr[i].classList.remove('closed');  
 };
 
+function openPopUp2(){
+    let popupWindow = document.querySelector('#popup2')
+    popupWindow.classList.remove('close')
+}
+
+function closePopUp2(){
+    let popupWindow = document.querySelector('#popup2')
+    popupWindow.classList.add('close')
+}
 
 
 //Сложение очков, для получения счёта( я не знаю зачем тут нужен был массив)
+
+
+
+function openPopUp2(){
+    let popupWindow = document.querySelector('#popup2')
+    popupWindow.classList.remove('close')
+}
+
+function closePopUp2(){
+    let popupWindow = document.querySelector('#popup2')
+    popupWindow.classList.add('close')
+}
 
 
 
@@ -471,7 +514,5 @@ openPopUpButton3.addEventListener('click', function(){
 closePopUpButton3.addEventListener('click', function(){
     popUpWindow3.classList.add('close')
 })
-
-
 
 
