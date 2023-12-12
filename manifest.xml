@@ -1,29 +1,29 @@
 <course>
-<title>ФГОС СПО 18.02.09 МДК.01.01 Колонны насадочного типа</title>
+<title>ФГОС СПО 21.02.02 МДК 04.01 Особенности менеджмента в профессиональной деятельности</title>
 <description/>
 <language>ru</language>
 <!-- Что это? -->
-<code>301121129</code> 
+<code>301121154</code> 
 <!-- Что это? -->
-<fgos_title>ФГОС СПО 18.02.09</fgos_title>
-<fgos_text>Переработка нефти и газа</fgos_text>
-<mdk_title>МДК.01.01</mdk_title>
-<mdk_text>Технологическое оборудование и коммуникации</mdk_text>
+<fgos_title>ФГОС СПО 21.02.02</fgos_title>
+<fgos_text>Бурение нефтяных и газовых скважин</fgos_text>
+<mdk_title>МДК 04.01</mdk_title>
+<mdk_text>Организация деятельности коллектива исполнителей</mdk_text>
 <structure>
 <item0>
-<name>Колонны насадочного типа
+<name>Особенности менеджмента в профессиональной деятельности
 </name>
-<code>1_eom</code>
+<code>eom_1</code>
 </item0>
 <item1>
-<name>Колонны насадочного типа
+<name>Особенности менеджмента в профессиональной деятельности
 </name>
-<code>2_eom</code>
+<code>eom_2</code>
 </item1>
 <item2>
-<name>Колонны насадочного типа
+<name>Особенности менеджмента в профессиональной деятельности
 </name>
-<code>3_eom</code>
+<code>eom_3</code>
 </item2>
 </structure>
 </course>
