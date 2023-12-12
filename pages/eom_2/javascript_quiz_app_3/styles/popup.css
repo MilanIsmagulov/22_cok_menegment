@@ -353,3 +353,9 @@
         height: 500px;
     }
 }
+
+@media (max-width: 1180px) {
+    .answers_btn form div p{
+        font-size: 15px !important;
+    }
+}

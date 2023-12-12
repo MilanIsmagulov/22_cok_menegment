@@ -17,6 +17,7 @@ body{
     background: #fff;
     height: 100vh;
     width: 100vw;
+    overflow-x: hidden !important;
 }
 
 .theory_eom{

@@ -323,6 +323,10 @@ input:disabled {
 
 }
 
+.step_marker_and_buttons{
+    padding-bottom: 50px !important;
+}
+
 .main_image{
     position: relative;
     height: 500px;
@@ -347,6 +351,7 @@ input:disabled {
     .step_marker_and_buttons{
         display: flex;
         width: 93vw;
+        padding-bottom: 50px !important;
     }
 
     .theory_eom{
@@ -364,7 +369,9 @@ input:disabled {
 }
 
 @media (max-width: 1180px) {
-    
+    .img_g img{
+        width: 70% !important;
+    }
     .black_header{
         height: 180px;
     }

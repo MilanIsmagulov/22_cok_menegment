@@ -57,10 +57,13 @@ p{
     width: 100% !important;
 }
 
-
 .theory_eom img{
     width: 100% !important;
     margin: 0 auto !important; 
+}
+
+.step_marker_and_buttons{
+    padding-bottom: 50px !important;
 }
 
 

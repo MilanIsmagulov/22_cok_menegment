@@ -84,6 +84,9 @@ p{
     height: clamp(300px,70vh,1000px) !important;
 }
 
+.step_marker_and_buttons{
+    padding-bottom: 50px !important;
+}
 
 .main_window{
     height: 100%;
